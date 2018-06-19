@@ -1,0 +1,64 @@
+{
+  "name": "aurelia-plugin-skeleton",
+  "version": "0.1.0",
+  "description": "Skeleton plugin following spoonx conventions.",
+  "keywords": [
+    "aurelia",
+    "spoonx",
+    "plugin"
+  ],
+  "homepage": "https://github.com/SpoonX/aurelia-plugin-skeleton#readme",
+  "main": "dist/commonjs/aurelia-plugin-skeleton.js",
+  "typings": "dist/aurelia-plugin-skeleton.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpoonX/aurelia-plugin-skeleton.git"
+  },
+  "author": "SpoonX <info@spoonx.nl>",
+  "contributors": [
+    "doktordirk <doktordirk@outlook.de> (http://spoonx.nl)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpoonX/aurelia-plugin-skeleton/issues"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "build": "gulp build",
+    "preversion": "npm test",
+    "version": "npm run build && gulp prepare-package && git add -A dist doc/CHANGELOG.md bower.json",
+    "postpublish": "git push upstream master && git push upstream --tags"
+  },
+  "jspm": {
+    "registry": "npm",
+    "jspmPackage": true,
+    "main": "aurelia-plugin-skeleton",
+    "format": "amd",
+    "directories": {
+      "dist": "dist/amd"
+    },
+    "dependencies": {
+      "aurelia-dependency-injection": "^1.0.0"
+    },
+    "peerDependencies": {
+      "aurelia-dependency-injection": "^1.0.0"
+    },
+    "devDependencies": {
+      "aurelia-dependency-injection": "^1.0.0",
+      "aurelia-pal-browser": "^1.0.0",
+      "aurelia-polyfills": "^1.0.0",
+      "fetch": "github:github/fetch@^1.0.0"
+    }
+  },
+  "dependencies": {
+    "aurelia-dependency-injection": "^1.0.0"
+  },
+  "devDependencies": {
+    "spoonx-tools": "^1.0.0-0"
+  },
+  "aurelia": {
+    "build": {
+      "resources": []
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "aurelia-plugin-skeleton",
+  "main": "dist/aurelia-plugin-skeleton.d.ts"
+}
