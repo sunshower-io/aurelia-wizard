@@ -1,0 +1,15 @@
+template.wizard-panel-wrapper
+    .wizard-panel(ref="panel")
+        .header
+            h3 ${'systems.wizard.step' | t} ${wizard.current + 1} ${'systems.wizard.of' | t} ${wizard.last + 1}
+            span ${header & t}
+        .contents
+            .body
+                .left
+                    slot
+                .right
+                    p(t="[html]${helptext}")
+        .footer
+            ui-button(disabled.bind="wizard.isFirst" click.trigger="wizard.previous()")  ${'systems.wizard.previous' | t}
+            ui-button(primary disabled.bind="!nextActive || wizard.isLast" click.trigger="next()" if.bind="!wizard.isLast") ${'systems.wizard.next' | t}
+            ui-button(primary disabled.bind="!nextActive" click.trigger="finish()" if.bind="wizard.isLast") ${'systems.wizard.finish' | t}

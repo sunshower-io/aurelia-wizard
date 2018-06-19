@@ -1,0 +1,14 @@
+template
+    .aire-wizard-progress
+        .wizard-horizontal
+            .page(
+                repeat.for="nav of router.navigation"
+                class="${nav.isActive ? 'active' : ''}"
+                click.delegate="navigateTo(nav)"
+            )
+                .wizard-circle
+                    .inner
+                .wizard-title ${nav.settings.title & t}
+                .wizard-bar-left
+                .wizard-bar-right
+    ui-router-view.aire-stretch.wizard-body

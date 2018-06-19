@@ -12,15 +12,15 @@
   "typings": "dist/aurelia-plugin-skeleton.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpoonX/aurelia-plugin-skeleton.git"
+    "url": "git+https://github.com/sunshower-io/aurelia-wizard.git"
   },
-  "author": "SpoonX <info@spoonx.nl>",
+  "author": "Josiah Haswell",
   "contributors": [
-    "doktordirk <doktordirk@outlook.de> (http://spoonx.nl)"
+    "doktordirk <doktordirk@outlook.de> (http://spoonx.nl), josiah gumerman <josiah.gumerman@gmail.com> (https://sunshower.io)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SpoonX/aurelia-plugin-skeleton/issues"
+    "url": "https://github.com/sunshower-io/aurelia-wizard/issues"
   },
   "scripts": {
     "test": "gulp test",
@@ -32,7 +32,7 @@
   "jspm": {
     "registry": "npm",
     "jspmPackage": true,
-    "main": "aurelia-plugin-skeleton",
+    "main": "aurelia-wizard",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
